@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel ="stylesheet" href="styles.css">
+		<link href=
+"https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+    <body>
+    <div class="container">
+
+		<div class="upper">
+			<a href="#" class="Search" id="searchToggle">
+				<i class="fa fa-search" aria-hidden="true">
+					<form action="" method="get">
+						<div class="Search_box" id="Search_block">
+							<input id="sbx" name="Search_input" placeholder="Type here..." type="search">
+							<div id="line"></div>
+						</div>
+					</form>
+				</i>
+			</a>
+			<a href="#" class="Playlistsets" onclick="Right_menu()">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</a>
+		</div>
+		<div class="title">
+			<div class="track-art"></div>
+			<div class="track-name">Choose</div>
+			<div class="track-artist">Track</div>
+		</div>
+		<div class="bottom-section">
+			<div class="Timer">
+				<div class="current-time">00:00</div>
+		  		<input type="range" min="1" max="100" value="1" class="seek_slider" onchange="seekTo()">
+		  		<div class="total-duration">00:00</div>
+			</div>
+			<div class="controls">
+				<div class="prev-track" onclick="prevTrack()">
+					<i class="fa fa-step-backward" aria-hidden="true"></i>
+				</div>
+				<div class="playpause-track" onclick="playpauseTrack()">
+					<i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>
+				</div>
+				<div class="next-track" onclick="nextTrack()">
+					<i class="fa fa-step-forward" aria-hidden="true"></i>
+				</div>
+			</div>
+	</div>
+	<script src="index.js"></script>
+    </body>
+</html>
